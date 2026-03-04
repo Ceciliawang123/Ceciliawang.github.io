@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班组长AI教练</title>
+</head>
+<body>
+    <!-- 引入Coze ChatSDK（你提供的这行代码） -->
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+    
+    <!-- 必须添加的智能体初始化代码 -->
+    <script>
+        // 初始化Coze智能体核心逻辑（缺一不可）
+        new CozeWebSDK.WebChatClient({
+            config: {
+                bot_id: '7588439952329867316', // 替换为真实bot_id
+                locale: 'zh-CN'
+            },
+            auth: {
+                type: 'pat', // 正确的PAT鉴权类型
+                token: 'pat_VifeWzoEGgCuY2z0aHXEQnjU3r4u7ljs0iqtJsSJ0YJelhwQOFVHDVFc1KH5R9fl' // 替换为真实PAT令牌
+            },
+            appearance: {
+                show_header: true,
+                title: 'Coze'
+            }
+        });
+    </script>
+</body>
+</html>

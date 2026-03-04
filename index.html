@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>班组长AI教练</title>
+    <title>AI助手</title>
 </head>
 <body>
     <!-- 引入Coze ChatSDK（你提供的这行代码） -->
@@ -20,6 +20,8 @@
             auth: {
                 type: 'token', // 正确的PAT鉴权类型
                 token: 'pat_VifeWzoEGgCuY2z0aHXEQnjU3r4u7ljs0iqtJsSJ0YJelhwQOFVHDVFc1KH5R9fl' // 替换为真实PAT令牌
+                onRefreshToken: function () {
+                return 'pat_VifeWzoEGgCuY2z0aHXEQnjU3r4u7ljs0iqtJsSJ0YJelhwQOFVHDVFc1KH5R9fl'
             },
             appearance: {
                 show_header: true,
